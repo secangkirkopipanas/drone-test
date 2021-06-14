@@ -1,0 +1,10 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: backend
+  image: maven:3-openjdk-8-slim
+  commands:
+  - mvn clean install
+
